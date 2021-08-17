@@ -8,7 +8,7 @@
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="css/style.css">
     <style>
-       
+
     </style>
 </head>
 
@@ -17,10 +17,10 @@
         <div class="container">
             <div class="calculator">
                 <div class="display">
-                    <div id="history" class="history">
-                        <p>9*9</p>
+                    <div class="history">
+                        <p id="history">9*9</p>
                     </div>
-                    <div  class="output">
+                    <div class="output">
                         <h2 id="output">456</h2>
                     </div>
                 </div>
@@ -54,15 +54,16 @@
                         <input type="button" value="" class="key empty" disabled></input>
                         <input type="button" value="0" class="key number "></input>
                         <input type="button" value="" class="key empty" disabled></input>
-                        <input type="button" value="=" class="key oparetor"></input>
+                        <input onclick='getOparetor()' type="button" value="=" class="key oparetor"></input>
                     </div>
                 </div>
             </div>
         </div>
     </main>
 
-
-    
+    <script>
+    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

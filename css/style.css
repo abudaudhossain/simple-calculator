@@ -1,68 +1,79 @@
+ /* =============
+ common style 
+ =============== */
 :root {
     --main-color: #0b0b2b;
-    --white-40: #fbfafaaf;
-    --white-20: #fbfafa5e;
+    --white-40  : #fbfafaaf;
+    --white-20  : #fbfafa5e;
 }
-
-body {
-    background: linear-gradient(13deg, rgba(102, 2, 209, 1) 0%, rgba(192, 0, 255, 1) 58%);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
 * {
-    margin: 0;
+    margin : 0;
     padding: 0;
 }
+body {
+    background       : linear-gradient(13deg, rgba(102, 2, 209, 1) 0%, rgba(192, 0, 255, 1) 58%);
+    background-repeat: no-repeat;
+    background-size  : cover;
+    height           : 100vh;
+}
 
+
+ /* =============
+ calculator body style 
+ =============== */
 .calculator {
-    width: 400px;
-    background: #f3f3f38e;
-    margin: 50px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width        : 400px;
+    background   : #f3f3f38e;
+    margin       : 50px auto;
+    box-shadow   : rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
     border-radius: 10px;
 }
-
+ /* =============
+ display style 
+ =============== */
 .display {
-    width: 100%;
-    height: 100px;
-    margin: auto;
-    background: var(--white-40);
-    border: 5px var(--white-20) solid;
-    border-radius: 5px;
-    box-sizing: border-box;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    width          : 100%;
+    height         : 100px;
+    margin         : auto;
+    background     : var(--white-40);
+    border         : 5px var(--white-20) solid;
+    border-radius  : 5px;
+    box-sizing     : border-box;
+    padding        : 10px;
+    display        : flex;
+    flex-direction : column;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items    : flex-end;
 }
-
+ /* =============
+ keybord style 
+ =============== */
 .keybord {
     padding: 25px 0;
-    margin: auto;
+    margin : auto;
 
     width: 100%;
 }
-
+ /* =============
+ key style 
+ =============== */
 .key {
-    padding: 15px;
-    border: 5px var(--white-20) solid;
+    padding      : 15px;
+    border       : 5px var(--white-20) solid;
     border-radius: 50%;
-    margin: 5px;
-    display: inline-block;
-    width: 70px;
-    height: 70px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
+    margin       : 5px;
+    display      : inline-block;
+    width        : 70px;
+    height       : 70px;
+    font-size    : 1.5rem;
+    font-weight  : 700;
+    text-align   : center;
 }
 
 .row {
-    display: flex;
+    display        : flex;
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top     : 10px;
 }
 
 .oparetor {
@@ -71,5 +82,5 @@ body {
 
 .empty {
     background: none;
-    border: none;
+    border    : none;
 }
